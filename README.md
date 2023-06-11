@@ -1,2 +1,2 @@
-# Project Request
-The company has instructed the Data Engineer team to scrape product data from the website tiki.com and insert it into a MongoDB database, aiming to gain insights into their competitor's offerings and improve their own competitive position.
+# Project Requirements
+The Data Engineer team has been instructed to scrape product data from tiki.com and store it in a MongoDB database. The goal is to gain insights into competitors' offerings and enhance the company's competitive position. Additionally, the team is tasked with extracting specific data fields from MongoDB and inserting them into a MySQL database for other teams to use. We also need to create visualizations to derive some insights from the data.
