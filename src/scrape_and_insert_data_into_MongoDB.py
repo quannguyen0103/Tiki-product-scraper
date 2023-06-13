@@ -18,7 +18,7 @@ with open("category_id.csv", 'r') as file:
     for row in csv_reader:
         category_id.extend(row)
 
-#2. Loop through category api to scrape data and insert into MongoDB
+#2. Loop through category api to scrape and insert data into MongoDB
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["tiki_product"]
 collection = db["tiki_test"]
