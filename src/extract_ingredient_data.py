@@ -6,7 +6,7 @@ import pymongo
 import re
 import csv
 
-# Get ingredient data and insert to a csv file
+# Get ingredient data and insert to a CSV file
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 db = client["tiki_product"]
 collection = db["tiki_data"]
