@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import sqlalchemy as db
 import pandas as pd
 
-# Connect to MySQL
+# Connect to MySQL database
 engine = db.create_engine("mysql+mysqlconnector://root:password@localhost:3306/tiki_product")
 connection = engine.connect()
 
