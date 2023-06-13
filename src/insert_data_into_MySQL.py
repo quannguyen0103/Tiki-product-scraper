@@ -12,7 +12,7 @@ engine = db.create_engine("mysql+mysqlconnector://root:password@localhost:3306")
 connection = engine.connect()
 engine.execute("CREATE DATABASE tiki_product;")
 
-#2. Create a table in MySQL database
+#2. Create a table in the MySQL database
 engine = db.create_engine("mysql+mysqlconnector://root:password@localhost:3306/tiki_product")
 connection = engine.connect()
 metadata = db.MetaData()
