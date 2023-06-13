@@ -35,7 +35,7 @@ product_data = db.Table("product_data",
 metadata.create_all(engine)
 
 
-#3. Find specific data from MongoDB database and insert into MySQL database
+#3. Find specific data from MongoDB database and insert it into MySQL database
 insert_query = "INSERT INTO product_data (id, name, category_id, category_name, subcategory_id, subcategory_name, short_description, description, url, price, rating, quantity_sold, origin) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
