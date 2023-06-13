@@ -45,7 +45,7 @@ for cat_id in category_id:
                 product_id = product_data["id"]
                 url = f"https://tiki.vn/api/v2/products/{product_id}"
                 
-                # skip if the product_id is already existed to avoid duplicate
+                # Skip if the product_id is already existed to avoid duplicate
                 if product_id in existed_id:
                     print(f"Skipping duplicate product_id: {product_id}")
                 else:
@@ -60,7 +60,7 @@ for cat_id in category_id:
                         print(f"Fail to insert data for product {product_id}, skip. Errror: {e}")
                         continue
                     
-                    # randomly sleep after 50 or 100 requests to avoid blocking IP
+                    # Randomly sleep after 50 or 100 requests to avoid blocking IP
                     product_counter += 1
                     if product_counter % 100 == 50:
                         time.sleep(3)
