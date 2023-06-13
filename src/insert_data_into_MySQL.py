@@ -7,7 +7,6 @@ import pymongo
 import re
 import json
 
-
 #1. Create a MySQL database
 engine = db.create_engine("mysql+mysqlconnector://root:password@localhost:3306")
 connection = engine.connect()
