@@ -13,6 +13,7 @@ collection = db["tiki_data"]
 pattern = re.compile("thành phần:", re.IGNORECASE)
 query = {"description": {"$regex": pattern}}
 mongo_documents = collection.find(query)
+
 for document in mongo_documents:
     product_id = document.get("id")
     soup = BeautifulSoup(document["description"], "html.parser")
