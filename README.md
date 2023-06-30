@@ -1,5 +1,15 @@
-# Project Requirements
-The Data Engineer team has been instructed to scrape product data from tiki.com and store it in a MongoDB database. The goal is to gain insights into competitors' offerings and enhance the company's competitive position. Additionally, the team is tasked with extracting specific data fields from MongoDB and inserting them into a MySQL database for other teams to use. We also need to create visualizations to derive some insights from the data.
+# Source
 
-### Requirement specification:
-![Alt text](requirements.png)
+## 0. Set up
+- Install MongoDB & MySQL
+
+## 1. Scrape data
+Script: [load_data.py](src/load_data.py)
+### Workflow
+- Send `request` to `Tiki` web API to get product information
+- Set rule to `sleep` after 50 or 100 requests to avoid blocking `IP`
+- Add `APIs` failed to send request to a set for later handling
+- Insert scraped data directly to the `product` collection within the `tiki` MongoDB database
+- output: [sample_output (MongoDB)](data/processed_data/sample_output (MongoDB).json)
+
+## 2. 
