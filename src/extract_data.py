@@ -34,6 +34,6 @@ def extract_ingredient(collection):
             print(f"product {product_id} written to ingredient.csv successfully.")
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
-db = client["tiki_product"]
-collection = db["tiki_data"]
+db = client["tiki"]
+collection = db["product"]
 extract_ingredient(collection)
