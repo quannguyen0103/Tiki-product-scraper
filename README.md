@@ -37,4 +37,5 @@ Extract `product_id` and `ingredient` information in the product's `description`
 Script: [analyze_data.py](src/analyze_data.py)
 ### Description
 Create visualizations for better understanding of product
+
 ![Alt text](data/processed_data/visualization.png)
