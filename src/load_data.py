@@ -20,8 +20,8 @@ with open("category_id.csv", 'r') as file:
 
 #2. Loop through category api to scrape and insert data into MongoDB
 client = pymongo.MongoClient("mongodb://localhost:27017/")
-db = client["tiki_product"]
-collection = db["tiki_test"]
+db = client["tiki"]
+collection = db["product"]
 
 product_counter = 0
 
