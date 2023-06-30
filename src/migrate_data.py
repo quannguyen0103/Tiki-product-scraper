@@ -39,8 +39,8 @@ metadata.create_all(engine)
 insert_query = "INSERT INTO product_data (id, name, category_id, category_name, subcategory_id, subcategory_name, short_description, description, url, price, rating, quantity_sold, origin) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
 
 client = pymongo.MongoClient("mongodb://localhost:27017/")
-database = client["tiki_product"]
-collection = database["tiki_data"]
+database = client["tiki"]
+collection = database["product"]
 
 mongo_documents = collection.find({})
 
